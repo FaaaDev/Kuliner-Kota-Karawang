@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/view_pager_bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/slide_indicator" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/after"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_marginStart="30dp"
+                                    app:cardCornerRadius="50dp"
+                                    app:cardElevation="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imgmenu"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/stock_photo2" />
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/menuname"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="30dp"
+                                            android:fontFamily="@font/barlow_medium"
+                                            android:text="BA Taco"
+                                            android:textColor="#1b1b1b"
+                                            android:textSize="20sp" />
+
+                                        <TextView
+                                            android:id="@+id/operasional"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="30dp"
+                                            android:fontFamily="@font/barlow_medium"
+                                            android:text="Jam 08.00-21.00"
+                                            android:textColor="#727272"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/price"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="30dp"
+                                            android:fontFamily="@font/barlow_medium"
+                                            android:text="Rp. 10000"
+                                            android:textColor="#1b1b1b"
+                                            android:textSize="16sp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/lapakname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginStart="30dp"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="Lapak Enak"
+                                android:textColor="#1b1b1b"
+                                android:textSize="16sp" />
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginStart="30dp"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="Jl. Hidup yang lurus No. 77, Km 78 New York"
+                                android:textColor="#727272"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#E8DCDC"
+                                android:layout_marginBottom="24dp"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginStart="34dp"
+                                android:layout_marginEnd="34dp"/>
+
+                            <TextView
+                                android:id="@+id/desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginStart="30dp"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="@string/dummy"
+                                android:textColor="#727272"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginBottom="50dp"
+                                android:gravity="center_vertical">
+                                <Button
+                                    android:id="@+id/order"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pesan"
+                                    android:textAllCaps="false"
+                                    android:fontFamily="@font/barlow_medium"
+                                    android:background="@drawable/btn_primary"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginEnd="30dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/loading"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:gravity="center">
+                            <ProgressBar
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

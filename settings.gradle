@@ -1,0 +1,2 @@
+rootProject.name='Kuliner Kota Karawang'
+include ':app'

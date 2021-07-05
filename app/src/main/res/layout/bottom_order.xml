@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/view_pager_bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="-30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/slide_indicator" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="34dp"
+                            android:fontFamily="@font/barlow_semibold"
+                            android:text="Buat Pesanan"
+                            android:textColor="#1b1b1b"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginEnd="34dp">
+
+                            <EditText
+                                android:id="@+id/nama"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:background="@drawable/layouting"
+                                android:fontFamily="@font/barlow_regular"
+                                android:hint="Nama anda"
+                                android:inputType="textCapWords"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:background="@drawable/background_label"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="Nama Pemesan"
+                                android:textColor="#1b1b1b"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="34dp">
+
+                            <EditText
+                                android:id="@+id/jumlah"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:background="@drawable/layouting"
+                                android:fontFamily="@font/barlow_regular"
+                                android:text="1"
+                                android:inputType="number"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:background="@drawable/background_label"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="Jumlah Pesanan"
+                                android:textColor="#1b1b1b"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="34dp">
+
+                            <EditText
+                                android:id="@+id/alamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:background="@drawable/layouting"
+                                android:fontFamily="@font/barlow_regular"
+                                android:hint="Jl. Rumah Anda"
+                                android:inputType="textMultiLine"
+                                android:gravity="top"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:background="@drawable/background_label"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="Alamat"
+                                android:textColor="#1b1b1b"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="72dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="34dp"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="Total Pesanan"
+                                android:textColor="#1b1b1b"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"/>
+                            <TextView
+                                android:id="@+id/total"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="34dp"
+                                android:fontFamily="@font/barlow_medium"
+                                android:text="Rp. 0"
+                                android:textColor="#1b1b1b"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginBottom="50dp"
+                            android:gravity="center_vertical">
+                            <Button
+                                android:id="@+id/proses"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Proses Pesanan"
+                                android:textAllCaps="false"
+                                android:fontFamily="@font/barlow_medium"
+                                android:background="@drawable/btn_primary"
+                                android:layout_marginStart="34dp"
+                                android:layout_marginEnd="34dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

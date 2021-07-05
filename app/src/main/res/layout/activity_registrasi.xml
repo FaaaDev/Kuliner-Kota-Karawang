@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Registrasi"
+    android:id="@+id/container">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="-70dp"
+            app:cardElevation="0dp"
+            android:rotation="45">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradiasi"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="120dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="34dp"
+                    android:fontFamily="@font/barlow_semibold"
+                    android:text="Buat Lapak Baru"
+                    android:textColor="#1b1b1b"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="34dp">
+
+                    <EditText
+                        android:id="@+id/lapakname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/layouting"
+                        android:fontFamily="@font/barlow_regular"
+                        android:hint="Lapak Enak"
+                        android:inputType="textCapWords"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/background_label"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="Nama Lapak"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="34dp">
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/layouting"
+                        android:fontFamily="@font/barlow_regular"
+                        android:hint="082488xxxxxx"
+                        android:inputType="number"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/background_label"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="Nomor HP"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="34dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/background_spinner">
+
+                        <Spinner
+                            android:id="@+id/spinner_wilayah"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/barlow_medium" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/background_label"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="Wilayah"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="34dp">
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/layouting"
+                        android:fontFamily="@font/barlow_regular"
+                        android:gravity="top"
+                        android:hint="Alamat Lapak"
+                        android:inputType="textMultiLine"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/background_label"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="Alamat"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="34dp">
+
+                    <EditText
+                        android:id="@+id/passwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/layouting"
+                        android:fontFamily="@font/barlow_regular"
+                        android:hint="******"
+                        android:inputType="textPassword"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/background_label"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="Password"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="34dp">
+
+                    <EditText
+                        android:id="@+id/repass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/layouting"
+                        android:fontFamily="@font/barlow_regular"
+                        android:hint="******"
+                        android:inputType="textPassword"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/background_label"
+                        android:fontFamily="@font/barlow_medium"
+                        android:text="Ketik Ulang Password"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/regist_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="34dp"
+                    android:background="@drawable/btn_primary"
+                    android:fontFamily="@font/barlow_semibold"
+                    android:text="Buat"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/gologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow_regular"
+            android:text="@string/login"
+            android:textColor="#0000ff"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
